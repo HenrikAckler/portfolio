@@ -5,10 +5,38 @@
     <title>Hank Ackler</title>
 </head>
  
+<p id="loginScreen"></p>
+
 <body>
   <script>
-      x = "Hank's Website";
-      document.body.innerHTML = "<h1>" + x + "</h1>"
+    var userName = 'hackler';
+    var typeSpeedSlowest = 200;
+    var typeSpeedFastest = 100;
+    var i = 0;
+    var console = '';
+    var loadText = 'Linux Hank 25.1 Wolfram portfolioWebsite tty1\n\n portfolioWebsite login: ';
+    
+    function loginOutput()
+    {
+      if(i < userName.length)
+        {
+          document.getElementById("loginScreen").innerHTML += userName.charAt(i);
+          i++;
+          setTimeout(loginOutput, ( Math.random() * (typeSpeedSlowest - typeSpeedFastest) + typeSpeedFastest ) );
+        }
+    }
+    
+    function userNameInput()
+    {
+      if(i < loadText.length)
+        {
+          document.getElementById("loginScreen").innerHTML += loadText.charAt(i);
+          i++;
+          setTimeout(userNameInput, ( Math.random() * (typeSpeedSlowest - typeSpeedFastest) + typeSpeedFastest ) /10 );
+        }
+      loginOutput();
+    }
+  window.onload = userNameInput;
   </script>
 </body>
  
