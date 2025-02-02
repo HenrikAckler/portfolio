@@ -1,0 +1,54 @@
+:root {
+   --silver: #F7F6F2;
+   --grey: #A1ACA2;
+   --brass: #C09961;
+   --tungsten: #2F3330;
+}
+
+.ascii-banner pre {
+   width: 100%;
+   font-size: 0.175vw;
+   background-color: var(--tungsten);
+   color: #F7F6F2;
+   text-align: center;
+   white-space: no-wrap;
+   padding: 0px;
+   text-align: center;
+   
+}
+
+html {
+   overflow-y: scroll;
+}
+
+body {
+   background-color: var(--tungsten);
+   font-size: large;
+   font-family: 'Times New Roman', Times, serif;
+   color: var(--grey);
+   max-width: 80ch;
+   margin: 0;
+}
+
+.status {
+   font-style: italic;
+   font-size: 1vw;
+   margin-top: 0px;
+}
+
+.linkIcon {
+   margin-left: 5px;
+   margin-right: 5px;
+   text-decoration: none;
+   margin-top: 0px;
+}
+
+svg {
+   fill: var(--grey);
+   width: 2.5vw;
+   height: 2.5vw;
+}
+
+svg:hover {
+   fill: var(--silver);
+}

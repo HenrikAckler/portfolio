@@ -1,0 +1,14 @@
+body {
+   background-color: #2F3330;
+
+}
+
+.ascii-banner pre {
+    width: 100%;
+    font-size: 0.1784vw; /* Adjust font size based on your needs */
+    background-color: #2F3330;
+    color: #F7F6F2; /* Light grey text color for ASCII art */
+    text-align: center;
+    white-space: no-wrap; /* Ensures long lines of ASCII art wrap properly */
+    padding: 0px;
+}
