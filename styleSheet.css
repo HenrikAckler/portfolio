@@ -14,7 +14,25 @@
    white-space: no-wrap;
    padding: 10px;
    text-align: center;
-   
+
+}
+
+.twoCol {
+   display: block;
+}
+
+.twoCol>* {
+   padding: 1rem;
+}
+
+@media (min-width:768px) {
+   .twoCol {
+      display: grid;
+      grid-template-columns: 1fr 2.5fr;
+      column-gap: 5vw;
+      margin-right: 20vw;
+      text-align: justify;
+   }
 }
 
 html {
@@ -26,8 +44,7 @@ body {
    font-size: 1.2vw;
    font-family: 'Times New Roman', Times, serif;
    color: var(--grey);
-   max-width: 80ch;
-   margin: 50px;
+   margin: 5vw;
 }
 
 a {
