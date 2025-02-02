@@ -12,7 +12,7 @@
    color: #F7F6F2;
    text-align: center;
    white-space: no-wrap;
-   padding: 0px;
+   padding: 10px;
    text-align: center;
    
 }
@@ -23,11 +23,30 @@ html {
 
 body {
    background-color: var(--tungsten);
-   font-size: large;
+   font-size: 1.2vw;
    font-family: 'Times New Roman', Times, serif;
    color: var(--grey);
    max-width: 80ch;
-   margin: 0;
+   margin: 50px;
+}
+
+a {
+   color: var(--grey);
+   font-size: 1.2vw;
+   text-decoration: none;
+}
+
+a:hover {
+   color: var(--silver);
+   font-size: 1.2vw;
+   text-decoration: none;
+}
+
+.catWatch {
+   position: fixed;
+   bottom: 0px;
+   right: 10px;
+   width: 10vw;
 }
 
 .status {

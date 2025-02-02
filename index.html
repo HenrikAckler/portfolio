@@ -9,29 +9,80 @@
 </head>
 
 <body>
-   <h1>
-      <div class="ascii-banner">
-         <pre id="asciiArt"></pre>
-      </div>
-      <script>
-         //attempts fetch from file
-         fetch('asciiArt.txt')
-            .then(response => response.text())
-            .then(data => {
-               document.getElementById('asciiArt').textContent = data;
-            })
-            .catch(error => {
-               console.error('Error loading ASCII art:', error);
-            });
-      </script>
 
-   </h1>
+   <div class="ascii-banner">
+      <pre id="asciiArt"></pre>
+   </div>
+   <script>
+      //attempts fetch from file
+      fetch('asciiArt.txt')
+         .then(response => response.text())
+         .then(data => {
+            document.getElementById('asciiArt').textContent = data;
+         })
+         .catch(error => {
+            console.error('Error loading ASCII art:', error);
+         });
+   </script>
+
    <p class="status">
       Page last edited on 2/2/2025
    </p>
-   <p>
-      Bunch of stuff here.
+
+   <h1>Who am I?</h1>
+   <img src="portfolioPic.jpg" alt="Picture of me"
+      style="border-radius: 25px; object-fit: cover; width: 150px; height: 150px; object-position: 0% 20%;">
+   <p>While I've lived across the United States, I call Boise, Idaho my hometown. I'm currently earning a Bachelors of
+      Science from the Computer Science Department at Boise State University,
+      after which I look to go into software development/engineering. I spend most of my spare time doing 
+      research of one form or another, usually into whatever tech related project I'm currently on.
    </p>
+   <p>My days are usually spent in or walking between classes and study locations at university, or working
+      on coursework or porjects at home with my wonderful cat, Iris (located in the bottom right of this page).
+      This website is one such project, made to quickly have a place to store links to other projects to come.
+   </p>
+   <p>Please feel free to reach out to me on LinkedIn if you would like to discuss anything!</p>
+
+   <h1>Projects</h1>
+   <h2>Completed (<em>to some degree</em>):</h2>
+   <ul class="dash">
+      <li><a href="https://github.com/HenrikAckler/asciiArt">ASCII Art</a>
+         <ul>
+            <li>A from-scratch Java program to convert any image into some ASCII art. I embarked on this project to learn about mixed file type handling, optimization, and many other topics.</li>
+            <li>The header of this website was generated with this program!</li>
+         </ul>
+      </li>
+      <li>StupidBox
+      <ul>
+         <li>This is the name given to my home server. While it initially ran Proxmox VE hypervisor, I eventually switched to Debian 12 to get past some serious hardware acceleration issues with Proxmox. Currently, I use it to learn metric collection and as a "clean" platform to benchmark programs I'm optimizing.</li>
+         <li>In the future, StupidBox will (hopefully) build and redeploy this website automatically!</li>
+      </ul>
+      </li>
+      <li>Portfolio Website</li>
+      <ul>
+         <li>This very website! While web development may not be my focus, I wanted a place to detail my projects and build some more skills. Obviously, the solution was to build a page from scratch.</li>
+         <li>Currently, this site is hosted on Github pages. While StupidBox could host it, that opens up my home network to a cybersecurity rabbit hole I'm not prepared to safely tackle.</li>
+      </ul>
+   </ul>
+   <h2>Next Up:</h2>
+   <ul class="dash">
+      <li>Keyboard
+         <ul>
+            <li>I want a keyboard that suits a very specific set of needs, that does not exist on the market currently. As such, I plan to build one from scratch. I've assembled many boards before, but this one will likely require custom PCB, wireless protocol, case, and firmware modifications in order to make it work properly</li>
+         </ul>
+      </li>
+      <li>Easy Redeploy Workflow / Software Stack</li>
+         <ul>
+            <li>I use a lot of programs in my coursework and personal projects. Right now, the majority of work is done on my laptop, with the desktop for heavy lifting and server for special tasks. I'd like a way to save every aspect of my workflow, and redeploy seamlessly elsewhere.</li>
+         </ul>
+   </ul>
+
+   <p>
+      More to come! As I get time, I'll expand this website. But for now, this is it. 
+   </p>
+
+   <br>
+   <p style="font-style: italic; color:var">Links:</p>
    <a class="linkIcon" href="https://github.com/HenrikAckler" target="_blank">
       <svg viewBox="0 0 438.549 438.549">
          <path
@@ -44,6 +95,10 @@
             d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558zM5.477,420.56h92.184v-277.32H5.477V420.56z" />
       </svg>
    </a>
+
+   <div>
+      <img class="catWatch" src="catWatch.png" alt="A picture of my beloved cat, Iris."
+   </div>
 </body>
 
 </html>
