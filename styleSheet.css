@@ -79,19 +79,16 @@ hr {
 
 a {
    color: var(--grey);
-   font-size: 1.2vw;
    text-decoration: none;
 }
 
 a:hover {
    color: var(--silver);
-   font-size: 1.2vw;
    text-decoration: none;
 }
 
 a:visited {
    color: var(--grey);
-   font-size: 1.2vw;
    text-decoration: none;
 }
 
