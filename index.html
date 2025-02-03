@@ -15,7 +15,7 @@
    </div>
    <script>
       //attempts fetch from file
-      fetch('asciiArt.txt')
+      fetch('Resources/asciiArt.txt')
          .then(response => response.text())
          .then(data => {
             document.getElementById('asciiArt').textContent = data;
@@ -26,6 +26,8 @@
    </script>
 
    <p class="status">
+      Banner generated with <a href="https://github.com/HenrikAckler/asciiArt">my ASCIIArt program.</a>
+      <br>
       Page last edited on 2/2/2025
    </p>
 
@@ -36,7 +38,7 @@
 
    <div class="twoColLeft">
       <div>
-         <img src="portfolioPic.jpg" alt="Picture of me" style="border-radius: 25px; object-fit: cover; height: 25vw;">
+         <img src="Resources/portfolioPic.jpg" alt="Picture of me" style="border-radius: 25px; object-fit: cover; height: 25vw;">
       </div>
       <div>
          <p>While I've lived across the United States, I call Boise, Idaho my hometown. I'm currently earning a
@@ -77,7 +79,7 @@
          </div>
          <script>
             //attempts fetch from file
-            fetch('javaASCII.txt')
+            fetch('Resources/javaASCII.txt')
                .then(response => response.text())
                .then(data => {
                   document.getElementById('javaASCII').textContent = data;
@@ -91,7 +93,7 @@
 
    <div class="twoColLeft">
       <div>
-         <img src="stupidbox.png" alt="Picture of my server"
+         <img src="Resources/stupidbox.png" alt="Picture of my server"
             style="border-radius: 25px; object-fit: cover; height: 25vw;">
       </div>
       <div>
@@ -118,7 +120,7 @@
       <div>
          <br>
          <embed src="https://henrikackler.github.io/portfolio/" style="width: 30vw; height: 15vw;">
-         <p style="font-style: italic; font-size: 1vw;">Woah....inception!</p>
+         <p style="font-style: italic; font-size: 1vw;">Woah....inception! (almost)</p>
       </div>
    </div>
 
@@ -132,7 +134,7 @@
 
    <div class="twoColLeft">
       <div>
-         <img src="keyboard.png" alt="Picture of my custom split keyboard" style="border-radius: 25px; object-fit: cover; width: 25vw;">
+         <img src="Resources/keyboard.png" alt="Picture of my custom split keyboard" style="border-radius: 25px; object-fit: cover; width: 25vw;">
       </div>
       <div>
          <h3>Keyboard</h3>
@@ -148,32 +150,20 @@
 
    <div class="twoColRight">
       <div>
-         
-      </div>
-      <div>
-         
-      </div>
-   </div>
-
-
-
-   <ul class="dash">
-      <li>Keyboard
-         <ul>
-            <li>I want a keyboard that suits a very specific set of needs, that does not exist on the market currently.
-               As such, I plan to build one from scratch. I've assembled many boards before, but this one will likely
-               require custom PCB, wireless protocol, case, and firmware modifications in order to make it work properly
-            </li>
-         </ul>
-      </li>
-      <li>Easy Redeploy Workflow / Software Stack
+         <h3>Easy Redeploy Workflow / Software Stack</h3>
          <ul>
             <li>I use a lot of programs in my coursework and personal projects. Right now, the majority of work is done
                on my laptop, with the desktop for heavy lifting and server for special tasks. I'd like a way to save
                every aspect of my workflow, and redeploy seamlessly elsewhere.</li>
+            <li>I hope to have this setup fully version controlled in a Github repo as well!</li>
          </ul>
-      </li>
-   </ul>
+      </div>
+      <div>
+         <img src="Resources/github-mark-white.png" alt="Github logo" style="border-radius: 25px; object-fit: cover; height: 20vw;">
+      </div>
+   </div>
+
+   <br><br><hr>
 
    <p>
       More to come! As I get time, I'll expand this website. But for now, this is it.
@@ -195,7 +185,7 @@
    </a>
 
    <div>
-      <img class="catWatch" src="catWatch.png" alt="A picture of my beloved cat, Iris.">
+      <img class="catWatch" src="Resources/catWatch.png" alt="A picture of my beloved cat, Iris.">
    </div>
 </body>
 
