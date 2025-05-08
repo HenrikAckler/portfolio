@@ -8,6 +8,7 @@
 .ascii-banner pre {
    width: 100%;
    font-size: 0.175vw;
+   font-family: monospace;
    background-color: var(--tungsten);
    color: #F7F6F2;
    text-align: center;
